@@ -54,13 +54,13 @@ def in_set() -> None:
     except ValueError: #will never reach here since - empty string == false, non-empty == true
         print(f'the input is not of type {desiredType}\n')
 
-#set
-def in_set() -> None:
+#dict
+def in_dict() -> None:
     try:
         desiredType: TypeAlias = dict
         __in: desiredType = desiredType(pair.split(':',1) for pair in 
-                                        input(f'Enter a {desiredType} at form key1:val1 , ... , keyN:valN: ')
-                                        .replace(' ','')
+                                        input(f'Enter a {desiredType} in form  key1: val1 , ... , keyN: valN : ')
+                                        .replace(' ','') #remove all whit spaces
                                         .split(','))
         print(__in)
     except ValueError: #will never reach here since - empty string == false, non-empty == true
