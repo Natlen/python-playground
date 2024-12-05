@@ -1,0 +1,10 @@
+x = 1
+string = "abc"
+z = 1.2
+b = True
+l = [1,2,3,4,"list"]
+t = (1,2,3,4,'tuple')
+s = {1,2,3,4, "set"}
+none = None
+d0 = dict()
+d = {'int': x, 'str': str, 'float': z, 'bool':b, 'list': l, 'tuple': t, 'set': s, 'None': none, 'dict': d0}
