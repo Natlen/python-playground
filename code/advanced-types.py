@@ -1,8 +1,11 @@
-class Animal:
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
     def __init__(self, name : str) -> None:
         self._name = name
+    @abstractmethod
     def sound(self) -> None:
-        raise NotImplemented
+        pass
     
 class Dog(Animal):
     def __init__(self, name : str) -> None:
